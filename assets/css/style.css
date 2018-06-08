@@ -6,12 +6,12 @@ body {
 align-items: center
 }
 
-.scoreboard {
+/* .scoreboard {
     background: rgb(7, 29, 226);
     color:cornflowerblue;
     width: 240px;
     margin: 0 auto !important;
-}
+} */
 
 #container {
     max-width: 900px;
