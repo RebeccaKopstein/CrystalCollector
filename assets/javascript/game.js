@@ -44,8 +44,6 @@ $(document).ready(function () {
     counter += crystalValue;
 
 
-    alert("New score: " + counter);
-
     if (counter === targetNumber) {
       alert("You win!")
       wins++;
@@ -53,16 +51,13 @@ $(document).ready(function () {
 
     else if (counter >= targetNumber) {
       alert("You lose!!")
-      Losses++;
+      losses++;
     }
 
-    // var html =
+    document.querySelector("#wins").innerHTML = wins;
+    document.querySelector("#losses").innerHTML = losses;
+    document.querySelector("#Counter").innerHTML = counter;
 
-    // "<p>wins: " + wins + "</p>" + 
-    // "<p>losses: " + losses + "</p>"
-    // "<p>counter " + counter + "</p>"
-
-    // document.querySelector("#game").innerHTML = html;
   });
 
 });
