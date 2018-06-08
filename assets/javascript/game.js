@@ -4,6 +4,7 @@ $( document ).ready(function() {
     console.log( "ready!" );
 var targetNumber = Math.floor(Math.random() * (120 - 19) + 19);
   $("#number-to-guess").text(targetNumber);
+  
   var crystals1 = Math.floor(Math.random() * (12 - 1) + 1);
   var crystals2 = Math.floor(Math.random() * (12 - 1) + 1);
   var crystals3 = Math.floor(Math.random() * (12 - 1) + 1);
@@ -12,16 +13,17 @@ var targetNumber = Math.floor(Math.random() * (120 - 19) + 19);
   var wins= 0;
   var losses= 0;
 
+
   var crystalNumbers = [crystals1, crystals2, crystals3, crystals4]
   console.log (crystalNumbers)
 
   for (var i = 0; i < crystalNumbers.length; i++) {
 
-        
+
         var imageCrystal = $("<img width= 200 height= 200>");
     
         
-        imageCrystal.addClass("#crystal-image");
+        imageCrystal.addClass("crystal-image");
     
         
         imageCrystal.attr("src", "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg");
@@ -46,20 +48,21 @@ var targetNumber = Math.floor(Math.random() * (120 - 19) + 19);
 
     if (counter === targetNumber) {
       alert("You win!")
-      win++;
+      wins++;
     }
 
     else if (counter >= targetNumber) {
       alert("You lose!!")
-      Loss++;
+      Losses++;
     }
 
-    var html =
-    "<p> number-to-guess " + "</p>" +
-    "<p>wins: " + wins + "</p>" +
-    "<p>losses: " + losses + "</p>"
+    // var html =
 
-    document.querySelector("#game").innerHTML = html;
+    // "<p>wins: " + wins + "</p>" + 
+    // "<p>losses: " + losses + "</p>"
+    // "<p>counter " + counter + "</p>"
+
+    // document.querySelector("#game").innerHTML = html;
   });
   
 });
