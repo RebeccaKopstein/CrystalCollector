@@ -1,3 +1,48 @@
 body {
-    background: url("../images/CrystalCollector.jpg")
+    background: url("../images/pexels-photo.jpeg")
 }
+
+.crystal-image {
+align-items: center
+}
+
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+#number-to-guess {
+    color: purple;
+    font-size: 40px;
+    background: yellowgreen;
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+    /* margin-top: 15px;
+    margin-bottom: 15px; */
+
+    }
+#crystals {
+    margin-left: 160px;
+}
+
+#game {
+    margin: 0 auto;
+    }
+
+    .crystal-image{
+        margin-left: 15px; 
+    }
+    
+.card {
+    margin: 0 auto;
+    text-align: center !important;
+    color: blue;
+    width: 27%;
+    }
+
+.card2 {
+    color: whitesmoke;
+    text-align: center;
+    }
